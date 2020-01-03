@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.math.BigInteger;
 import java.util.Date;
 
 @Data
@@ -19,7 +20,7 @@ import java.util.Date;
 public class Participant {
 
     @Id
-    private Long id;
+    private String id;
 
     private String fullName;
 
