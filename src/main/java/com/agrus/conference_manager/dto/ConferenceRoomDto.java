@@ -25,7 +25,6 @@ public class ConferenceRoomDto {
     @NotNull
     private String location;
 
-    @NotEmpty
     @NotNull
     @Positive
     private int maxSeats;

@@ -25,7 +25,6 @@ public class MongoDBUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        //TODO add constant
         Participant participant = participantRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("user not found by email"));
 

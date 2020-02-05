@@ -11,4 +11,6 @@ public interface ParticipantRepository extends MongoRepository<Participant, Long
 
     public Optional<Participant> findByEmail(String email);
 
+    public Optional<Participant> findById(String id);
+
 }

@@ -1,9 +1,6 @@
 package com.agrus.conference_manager.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,6 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document
+@EqualsAndHashCode(exclude = "password")
 public class Participant {
 
     @Id
@@ -24,7 +22,6 @@ public class Participant {
 
     private String fullName;
 
-    //@Indexed(unique = true)
     private String email;
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
