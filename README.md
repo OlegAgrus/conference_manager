@@ -3,7 +3,5 @@
 Restful conference management web application.
 
 Used technologies:
-  - Java:
-    -- Spring Boot
-    -- Rest assured
+  - Java: Spring Boot, Rest assured
   - MongoDB
