@@ -90,7 +90,7 @@ class AuthControllerTest {
                     .body("fullName", equalTo("Jack"))
                     .body("email", equalTo("jack@gmail.com"))
                     .body("password", equalTo(null))
-                    .body("birthDate", equalTo(1580515200000L));
+                    .body("birthDate", equalTo("2020-02-01T00:00:00.000+0000"));
         }
         finally {
             participantRepository.findByEmail("jack@gmail.com")

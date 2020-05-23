@@ -80,6 +80,6 @@ class ParticipantControllerTest {
                 .body("fullName", equalTo(userFullName))
                 .body("email", equalTo(userEmail))
                 .body("password", equalTo(null))
-                .body("birthDate", equalTo(userDate));
+                .body("birthDate", equalTo("2020-02-02T12:48:30.000+0000"));
     }
 }
